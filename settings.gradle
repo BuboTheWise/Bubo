@@ -1,18 +1,18 @@
-pluginManagement {
-    repositories {
+pluginManagement { 
+    repositories { 
         google()
         mavenCentral()
         gradlePluginPortal()
     }
+    plugins {
+        id 'com.android.application' version '8.1.4'
+    }
 }
-
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
-    repositories {
+dependencyResolutionManagement { 
+    repositories { 
         google()
         mavenCentral()
     }
 }
-
-rootProject.name = 'Bubo'
-include ':app'
+rootProject.name = "Bubo"
+include ":app"
