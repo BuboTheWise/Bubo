@@ -1,0 +1,43 @@
+Initialized native services in: /home/bubo/.gradle/native
+Initialized jansi services in: /home/bubo/.gradle/native
+Received JVM installation metadata from '/usr/lib/jvm/java-17-openjdk': {JAVA_HOME=/usr/lib/jvm/java-17-openjdk, JAVA_VERSION=17.0.19, JAVA_VENDOR=Arch Linux, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.19+10, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.19+10, VM_VENDOR=Arch Linux, OS_ARCH=amd64}
+The client will now receive all logging from the daemon (pid: 476702). The daemon log file: /home/bubo/.gradle/daemon/8.2/daemon-476702.out.log
+Starting 3rd build in daemon [uptime: 39 mins 48.005 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 8 worker leases.
+Now considering [/home/bubo/.hermes/workspace/Bubo] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file '/home/bubo/.hermes/workspace/Bubo/settings.gradle'.
+Projects loaded. Root project using build file '/home/bubo/.hermes/workspace/Bubo/build.gradle'.
+Included projects: [root project 'Bubo']
+
+> Configure project :
+Evaluating root project 'Bubo' using build file '/home/bubo/.hermes/workspace/Bubo/build.gradle'.
+Compiling build file '/home/bubo/.hermes/workspace/Bubo/build.gradle' using SubsetScriptTransformer.
+The configuration detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+The configuration detachedConfiguration1 is both resolvable and consumable. This is considered a legacy configuration and it will eventually only be possible to be one of these.
+The configuration detachedConfiguration1 is both consumable and declarable. This combination is incorrect, only one of these flags should be set.
+Resource missing. [HTTP GET: https://repo.maven.apache.org/maven2/com/android/application/com.android.application.gradle.plugin/8.2.2/com.android.application.gradle.plugin-8.2.2.pom]
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file '/home/bubo/.hermes/workspace/Bubo/build.gradle' line: 2
+
+* What went wrong:
+Plugin [id: 'com.android.application', version: '8.2.2', apply: false] was not found in any of the following sources:
+
+- Gradle Core Plugins (plugin is not in 'org.gradle' namespace)
+- Plugin Repositories (could not resolve plugin artifact 'com.android.application:com.android.application.gradle.plugin:8.2.2')
+  Searched in the following repositories:
+    Gradle Central Plugin Repository
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 869ms
