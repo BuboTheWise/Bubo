@@ -5,7 +5,8 @@
         android:icon="@drawable/bubo_icon"
         android:label="Bubo"
         android:roundIcon="@drawable/bubo_icon"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Bubo">
         <activity
             android:name=".MainActivity"
             android:exported="true">
