@@ -1,9 +1,9 @@
 plugins {
-    id 'com.android.application'
+    id "com.android.application"
 }
 
 android {
-    namespace 'com.bubo.app'
+    namespace "com.bubo.app"
     compileSdk 34
 
     defaultConfig {
@@ -26,10 +26,21 @@ android {
     }
 
     buildToolsVersion "34.0.0"
+
+    buildFeatures {
+        buildConfig = true
+    }
 }
 
 dependencies {
-    implementation 'com.google.android.material:material:1.10.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation "com.google.android.material:material:1.10.0"
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+
+    // Unit testing
+    testImplementation "junit:junit:4.13.2"
+
+    // Instrumentation testing
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
 }
