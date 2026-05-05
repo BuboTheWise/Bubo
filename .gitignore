@@ -2,8 +2,8 @@
 .gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/node_modules/**
-
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
 
 # Android
 *.apk
@@ -15,3 +15,7 @@ local.properties
 .idea/
 *.iml
 .vscode/
+
+# OS
+.DS_Store
+Thumbs.db
