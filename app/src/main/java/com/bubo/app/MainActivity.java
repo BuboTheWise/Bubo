@@ -11,10 +11,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Logger.debug("MainActivity onCreate called");
+        
         TextView textView = findViewById(R.id.textView);
         Button button = findViewById(R.id.button);
 
         textView.setText("Bubo App");
-        button.setOnClickListener(v -> textView.setText("Bubo initialized!"));
+        Logger.info("Text view set to Bubo App");
+        
+        button.setOnClickListener(v -> {
+            Logger.debug("Button clicked");
+            textView.setText("Bubo initialized!");
+            Logger.info("Text view updated to Bubo initialized!");
+        });
     }
 }
